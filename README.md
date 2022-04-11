@@ -1,44 +1,117 @@
 # assignment
+```
+1. What is Interface and whatis abstract class? What are the differences between them?
+```
 
-•  What is maven role? what it be used to do?
+ Interface
 
-  project management tool ,used for projects build, dependency and documentation. 
+* Object interaction is through methods they expose
+* behaviours are objects interface - group of related methods
+* Program to interface
+* Allows class to become more formal , its called promise/contract to outside world or fellow dev's
+* compiler enforces the contract
 
+Abstract class
 
+* class that is declared abstract.
+* it may or may not include abstract methods
+* Abstract classes cannot be instantiated, but they can be subclassed
+* Used to share code with several closely related classes
+* Share common fields. Methods
+* Have non-static and non-final fields.
+* Design choice
+* Graphics
+* Rectangle, square,
+* User in ecommerce system., Biz user and individual user.
+* Buyer vs seller
 
-
-•  What is the lifecycle of maven? could you tell me the details?
-
-
-   1.Validate,  validate the project is correct and all necessary information is available
-
-   2.Compile, compile the source code of the project
-
-   3.Test,  test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
-
-   4.Package, take the compiled code and package it in its distributable format, such as a JAR.
-
-   5.Integration test,Performs the test for maintaining integration.   
-   6.Verify,run any checks on results of integration tests to ensure quality criteria are met
-
-   7.Install ,install the package into the local repository, for use as a dependency in other projects locally
-
-   8. Deploy,done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
-
-
-
-
-•  what is the difference between package and install in maven lifecycle?
-
-package will compile your code and also package it. For example, if your pom says the project is a jar, it will create a jar for you when you package it and put it somewhere in the target directory (by default). install will compile and package, but it will also put the package in your local repository.
+**
 
 
 
-•  What is difference between passing by value and passing by reference? Could you design a code to verify your understanding and screenshot it to me?
-   
-   Java lang is always passed by value, which the value could be either the copy of bit address of the Heap objects held by an object-handler 
-   called reference (which always resides on the left side of "=" expression), or the actaul value of the primitive types passed(copied) to
-   the variable.
+##
+
+```
+2.What is the differences  between overriding and overloading?
+```
+
+Overloading:
+
+When two or more methods in the same class have the same name but different parameters
+
+Overriding:
+
+When the method signature (name and parameters) are the same in the superclass and the child class
+
+```
+3. What is final key word?
+(Filed, Method, Class)
+```
+
+When a method is declared with final keyword,
+A final method cannot be overridden.
+
+```
+4.  What is Java garbage collection?
+```
+
+Java garbage collection is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects will no longer be needed. The garbage collector finds these unused objects and deletes them to free up memory.
+
+```
+5. What is the differences between super and this?
+```
+
+super() is used to call Base class's constructor(Parent's class) while this() is used to call current class's constructor.
+
+```
+6. Can we use this keyword in constructor and why?
+```
+
+**this** is a reference to the current object-whose method or constructor is being called.
+we can refer to any member of the current object from within an instance method or a constructor by using **this**
+
+```
+7. What is
+Runtime/unchecked exception? what is Compile/Checked Exception?
+```
+
+**Runtime Exception**
+
+Runtime exception Not a compile exception
+
+* Not a compile time exception - not detected by compiler and only found at runtime.
+* Program is unrecoverable and cannot process anymore
+
+
+
+A checked exception is caught at compile time whereas a runtime or unchecked exception is, as it states, at runtime.
+
+**Checked Exception**
+
+* Checked Exception
+* Compiled time exception.
+* Compiler expects to handled at compile time , otherwise code will not compile.
+
+Checked exceptions are also known as **compile-time exceptions** as these exceptions are checked by the compiler during the compilation process to confirm whether the exception is handled by the programmer or not. If not, then the system displays a compilation error.
+
+```
+8. what is the difference between throw and throws?
+```
+
+The throws keyword is used to declare which exceptions can be thrown from a method, while the throw keyword is used to explicitly throw an exception within a method or block of code
+
+```
+9.Run the below three
+   pieces codes, Noticed the printed exceptions.  why do we put the
+   Null/Runtime exception before Exception?
+```
+
+Because all other exception inherit from Exception ,they are not allowed to throw before Exception(最大的异常放到最后)
+
+
+
+
+
 
 
 

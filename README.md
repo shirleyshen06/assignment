@@ -1,12 +1,15 @@
 # assignment
 
 •  What is maven role? what it be used to do?
-    project management tool ,used for projects build, dependency and documentation. 
+
+  project management tool ,used for projects build, dependency and documentation. 
 
 
 
 
 •  What is the lifecycle of maven? could you tell me the details?
+
+
    1.Validate,  validate the project is correct and all necessary information is available
 
    2.Compile, compile the source code of the project
